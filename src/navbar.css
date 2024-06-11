@@ -1,0 +1,71 @@
+@import url('utility.css');
+
+nav {
+    display: flex;
+    background-color: var(--clr-neutral-900);
+    padding: 15px 200px 15px 200px;
+    justify-content: space-between;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navlist-member {
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    transition: background-color 150ms ease;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.navlist-member:hover {
+    background-color: rgba(255, 255, 255, 0.217);
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 0;
+    font-size: 25px;
+}
+
+.active-page {
+    font-weight: 700;
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--clr-neutral-900);
+    min-width: 150px;
+    padding: 10px;
+    top: 49px;
+    border-radius: 5px;
+}
+
+/* .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+
+.dropdown-listed-items {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: color 150ms ease;
+}
+
+.dropdown-listed-items:hover {
+    color: rgb(189, 189, 189);
+}
